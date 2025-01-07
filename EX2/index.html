@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table Example</title>
+    <style>
+        /* Center the table on the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style the table */
+        table {
+            border-collapse: collapse;
+            width: 50%; /* Adjust width as needed */
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Header Style */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Table Data Style */
+        td {
+            padding: 10px;
+            text-align: left;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Table Footer Style */
+        tfoot td {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+
+        /* Caption Style */
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <!-- Table Caption -->
+        <caption>Sample Table</caption>
+        
+        <!-- Table Column Group -->
+        <colgroup>
+            <col style="background-color: yellow;">
+        </colgroup>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
